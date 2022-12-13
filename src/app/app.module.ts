@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 
 const myRoutes :  Routes=[
 
 {
   path:"",component:AdminLoginComponent
+},
+{
+  path:"employeelogin",component:EmployeeLoginComponent
 }
 
 
@@ -19,7 +23,8 @@ const myRoutes :  Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
