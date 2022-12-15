@@ -57,6 +57,14 @@ updateSecurity=(datatosend:any)=>
   return this.http.post("http://localhost:8080/securityupdate",datatosend)
 }
 
+getEmpProfileData=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/employeeDetails",datatosend)
+}
+employeeAuth=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/employeeauth",datatosend)
+}
 
 }
 

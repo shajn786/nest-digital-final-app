@@ -20,6 +20,8 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { SearchseacurityComponent } from './searchseacurity/searchseacurity.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { UpdateSecurityComponent } from './update-security/update-security.component';
+import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
+import { EmpProfileNewComponent } from './emp-profile-new/emp-profile-new.component';
 
 const myRoutes :  Routes=[
 
@@ -79,7 +81,9 @@ const myRoutes :  Routes=[
     SearchEmployeeComponent,
     SearchseacurityComponent,
     UpdateEmployeeComponent,
-    UpdateSecurityComponent
+    UpdateSecurityComponent,
+    EmployeeProfileComponent,
+    EmpProfileNewComponent
   ],
   imports: [
     BrowserModule,
