@@ -20,6 +20,11 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { SearchseacurityComponent } from './searchseacurity/searchseacurity.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { UpdateSecurityComponent } from './update-security/update-security.component';
+import { EmployeeLeaveComponent } from './employee-leave/employee-leave.component';
+import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
+import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
+import { LeaveapplicationComponent } from './leaveapplication/leaveapplication.component';
+import { EmpLeaveApplicationStatusComponent } from './emp-leave-application-status/emp-leave-application-status.component';
 
 const myRoutes :  Routes=[
 
@@ -58,6 +63,18 @@ const myRoutes :  Routes=[
 },
 {
   path:"updatesecurity",component:UpdateSecurityComponent
+},
+{
+  path:"employeeleave",component:EmployeeLeaveComponent
+},
+{
+  path:"employeeprofile",component:EmployeeProfileComponent
+},
+{
+  path:"leaveapplication",component:LeaveapplicationComponent
+},
+{
+  path:""
 }
 
 
@@ -79,7 +96,12 @@ const myRoutes :  Routes=[
     SearchEmployeeComponent,
     SearchseacurityComponent,
     UpdateEmployeeComponent,
-    UpdateSecurityComponent
+    UpdateSecurityComponent,
+    EmployeeLeaveComponent,
+    EmployeeProfileComponent,
+    EmployeeNavbarComponent,
+    LeaveapplicationComponent,
+    EmpLeaveApplicationStatusComponent
   ],
   imports: [
     BrowserModule,

@@ -57,6 +57,20 @@ updateSecurity=(datatosend:any)=>
   return this.http.post("http://localhost:8080/securityupdate",datatosend)
 }
 
+employeeAuth=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/employeeauth",datatosend)
+}
+
+getEmpProfileData=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/employeeDetails",datatosend)
+}
+
+leaveApplication=(datatosend:any)=>
+  {
+     return this.http.post("http://localhost:8080/leavapplication",datatosend)
+  }
 
 }
 

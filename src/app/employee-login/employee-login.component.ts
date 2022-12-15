@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router, Routes } from '@angular/router';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-employee-login',
@@ -9,11 +11,34 @@ export class EmployeeLoginComponent {
 
   email=""
   password=""
+  id:any=""
+  constructor(private api : ApiService, private route : Router)
+  {
+
+  }
 
   readValues=()=>
   {
     let data:any = {"email":this.email,"password":this.password}
     console.log(data)
+    this.api.employeeAuth(data).subscribe(
+
+     (response:any)=>
+     {
+      if(response.status == "success")
+      {
+        console.log(response)
+        this.id = response.empid
+        localStorage.setItem("id",this.id)
+
+        this.route.navigate(["/employeeprofile"])
+      }
+      else{
+        alert("invalid credential")
+      }
+     }
+
+    )
 
     
   }
